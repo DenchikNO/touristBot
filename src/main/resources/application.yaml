@@ -1,3 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/touristbot
+    username: postgres
+    password: sa
+
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+
 bot:
   name: newTouristBot
   token: 1792126645:AAGFIY-XcG5mQ3P8QIGyn-CRb2yuAxU560M
