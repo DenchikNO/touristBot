@@ -1,14 +1,12 @@
 package com.touristBot.domain;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 
 import javax.persistence.*;
 import java.io.Serializable;
 
-@Getter
-@Setter
 @Entity
+@Data
 @Table(name = "city_book")
 public class CityBookEntity implements Serializable {
 
@@ -17,7 +15,7 @@ public class CityBookEntity implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "city_book_id")
-    private Long id;
+    private int id;
 
     @Column(name = "city")
     private String city;
