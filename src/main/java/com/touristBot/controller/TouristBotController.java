@@ -25,17 +25,17 @@ public class TouristBotController {
         return cityBookService.takeCityById(id).toString();
     }
 
-    @DeleteMapping("{id}")
+    @PostMapping("/delete/{id}")
     public void deleteCityById(@PathVariable int id) {
         cityBookService.deleteById(id);
     }
 
-    @PutMapping
+    @PostMapping
     public void addCity(@RequestBody CityBookEntity cityBookEntity) {
         cityBookRepository.save(cityBookEntity);
     }
 
-    @PutMapping("{id}")
+    @PostMapping("/edit/{id}")
     public CityBookEntity editCity(@PathVariable int id, @RequestBody CityBookEntity cityBookEntity) {
         CityBookEntity cityDb = cityBookService.takeCityById(id);
         if (cityBookEntity.getCity() != null) {
