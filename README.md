@@ -1,11 +1,9 @@
 имя телеграм бота: newTouristBot
-
 токен: 1792126645:AAGFIY-XcG5mQ3P8QIGyn-CRb2yuAxU560M
 
 скрипт для созания бд: touristBot\src\main\resources\databaseScripts\create_city_book.sql
 
-соединение с postgresql: username: postgres
-                         password: sa
+соединение с postgresql: username: postgres, password: sa
                          
 /api/v1/city/add - добавление города и его справочной информации
 
