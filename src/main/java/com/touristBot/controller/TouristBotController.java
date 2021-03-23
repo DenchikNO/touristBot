@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
+@RequestMapping("/api/v1/city")
 public class TouristBotController {
 
     @Autowired
@@ -20,7 +21,7 @@ public class TouristBotController {
         return cityBookService.takeCityBookList().toString();
     }
 
-    @GetMapping("{id}")
+    @GetMapping("/take/{id}")
     public String takeCityById(@PathVariable int id) {
         return cityBookService.takeCityById(id).toString();
     }
@@ -30,7 +31,7 @@ public class TouristBotController {
         cityBookService.deleteById(id);
     }
 
-    @PostMapping
+    @PostMapping("/add")
     public void addCity(@RequestBody CityBookEntity cityBookEntity) {
         cityBookRepository.save(cityBookEntity);
     }
