@@ -8,7 +8,8 @@
 
 соединение с postgresql: username: postgres, password: sa
 
-                         
+    
+    
 /api/v1/city/add - добавление города и его справочной информации
 
 /api/v1/city/edit/{id} - изменене города и его справочной информации по id
