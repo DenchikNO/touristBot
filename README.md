@@ -5,7 +5,6 @@
 скрипт для созания бд: touristBot\src\main\resources\databaseScripts\create_city_book.sql
 
 соединение с postgresql: username: postgres
-                         
                          password: sa
                          
 /api/v1/city/add - добавление города и его справочной информации
