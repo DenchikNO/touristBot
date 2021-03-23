@@ -1,4 +1,5 @@
 имя телеграм бота: newTouristBot
+
 токен: 1792126645:AAGFIY-XcG5mQ3P8QIGyn-CRb2yuAxU560M
 
 скрипт для созания бд: touristBot\src\main\resources\databaseScripts\create_city_book.sql
